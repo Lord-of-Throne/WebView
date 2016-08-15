@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    function calljava(){
+    window.jsObject.getMessage("name","password");
+    }
+
+    function changeinput(){
+    document.getElementById("user").value="InputChanged!";
+    }
+
+    </script>
+
+    <script>
+    function change(){
+    document.getElementById("Edit").innerHTML="Changed!";
+    }
+
+    </script>
+    　　　　
+</head>
+
+　　　　
+<body>
+
+
+　　　　　　　　　　　　　　<p><span>账号:</span>
+    　　　　　　　　　　　　　　<span><input type='text' class='usr' name='user' id='user' value=''/></span>
+</p>
+
+　　　　　　　　　　　　　　<p>密码:</p>
+
+　　　　　　　　　　　　　　<input type='password' class='psw' name='pwd' value=''/>
+
+　　　　　　　　　　　　　　<p><input type="file" value="上传图片"/></p>
+　　　　　　　　　　　　　　
+<button class='denglu' onclick="calljava()">登陆</button>
+　　　　　　　　　　　　
+<button class='clear' onclick="changeinput()">清空</button>
+<span id="Edit">To be Edited!</span>
+
+
+　　　　
+</body>
+　　
+</html>
